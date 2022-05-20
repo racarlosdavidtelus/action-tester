@@ -7,15 +7,34 @@ on:
     #- cron: "0/6 * * * *"
     #- cron: "0 12 * * *"
     #- cron: "0 12 * FEB MON"
-  repository_dispatch:
-    types: [build]
-  pull_request:
-    types:
-      - closed
-      - assigned
-      - opened
-      - reopened
-
+  #repository_dispatch:
+    #types: [build]
+  #pull_request:
+    #types:
+      #- closed
+      #- assigned
+      #- opened
+      #- reopened
+  push:
+    branches:
+      - main
+      - 'feature/*' #matches feature/featurea, feature/x <- no cualquier string
+      - 'feature/**' #matches feature/featurea, feature/x y feature/x/x <- cualquier string
+      - '!feature/featC' # el ! se usa para ignorar esa rama
+    tags:
+      - v1.*
+    paths:
+    - '**.js' 
+    #branches-ignore:
+      #- main
+    #tags-ignore:
+      #- ""
+    #paths-ignore:
+      #- 'docs/**'
+  #pull_request:
+    #branches:
+      #- main
+    
 jobs:
   run-github-actions:
     runs-on: ubuntu-latest
