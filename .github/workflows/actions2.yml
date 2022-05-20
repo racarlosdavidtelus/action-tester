@@ -1,4 +1,4 @@
-name: Actions Workflow
+name: Actions Workflow 2
 
 on:
   #push:
@@ -20,6 +20,8 @@ jobs:
   run-github-actions:
     runs-on: ubuntu-latest
     steps:
+      - name: payload
+        run: echo ${{ github.event.client_payload.variable}}
       - name: List Files
         run: |
           pwd
