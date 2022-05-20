@@ -22,3 +22,10 @@ https://github.com/actions/checkout#usage
 ```
 
 ### Events, Schedules, External Events, Filters
+
+https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows
+
+https://crontab.guru/
+https://crontab.guru/examples.html
+
+https://docs.github.com/en/rest/repos/repos#create-a-repository-dispatch-event
