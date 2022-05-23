@@ -60,6 +60,10 @@ https://help.github.com/en/actions/automating-your-workflow-with-github-actions/
 GITHUB TOKEN
 https://help.github.com/en/actions/automating-your-workflow-with-github-actions/authenticating-with-the-github_token
 
-https://www.gnupg.org/
+para usar el GITHUB_TOKEN hay que dar permiso de lectura y escritura en Settings --> Action --> General:
+Read repository contents permission --> Read and write permissions
 
+Para encriptar un archivo ->  https://www.gnupg.org/
+
+gpg --symmetric --cipher-algo AES256 <NOMBRE_DEL_FILE>
 
