@@ -55,3 +55,5 @@ https://github.com/settings/tokens
 # branches
 https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#filter-pattern-cheat-sheet
 
+https://help.github.com/en/actions/automating-your-workflow-with-github-actions/using-environment-variables
+
