@@ -57,3 +57,9 @@ https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-ac
 
 https://help.github.com/en/actions/automating-your-workflow-with-github-actions/using-environment-variables
 
+GITHUB TOKEN
+https://help.github.com/en/actions/automating-your-workflow-with-github-actions/authenticating-with-the-github_token
+
+https://www.gnupg.org/
+
+
