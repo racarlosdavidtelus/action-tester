@@ -2,6 +2,23 @@ name: Containers
 on: push
 
 jobs:
+  docker-steps:
+    runs-on: ubuntu-latest
+    container:
+      image: node:18-alpine
+    steps:
+      - name: log node version  
+        run: node -v
+      - name: Step with docker 
+        uses: docker://node:18-alpine
+        with:
+          entrypoint: '/bin/echo'
+          args: 'Hello World'
+      - name: Log node version
+        uses: docker://node:18-alpine
+        with:
+          entrypoint: /usr/local/bin/node
+          args: -v
   node-docker:
     runs-on: ubuntu-latest
     services:
