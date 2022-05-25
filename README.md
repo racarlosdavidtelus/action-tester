@@ -69,3 +69,5 @@ gpg --symmetric --cipher-algo AES256 <NOMBRE_DEL_FILE>
 
 https://github.com/alialaa/simple-docker-nodejs-api
 
+
+Para correr los scripts: chmod +x script.sh
