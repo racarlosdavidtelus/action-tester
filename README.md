@@ -77,6 +77,12 @@ https://create-react-app.dev/
 CI=true npm run test
 CI=true npm run test -- --coverage
 Para desplegar paginas web estaticas -> https://surge.sh/
+surge token
+surge whoami
 
 https://prettier.io/
 npx prettier --check "**/*.js" 
+
+# Cache artifacts
+https://docs.github.com/en/actions/using-workflows/caching-dependencies-to-speed-up-workflows
+https://github.com/actions/cache
