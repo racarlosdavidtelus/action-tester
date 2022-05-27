@@ -12,11 +12,12 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: "12.x"
-      - run: cd react-app
-      - run: pwd
-      - run: ls
-      - run: npm i 
-      - run: npm run format_check
-      - run: npm test -- --coverage
+      - run: | 
+          cd react-app
+          pwd
+          ls
+          npm i 
+          npm run format_check
+          npm test -- --coverage
         env: 
           CI: true
