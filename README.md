@@ -79,4 +79,4 @@ CI=true npm run test -- --coverage
 Para desplegar paginas web estaticas -> https://surge.sh/
 
 https://prettier.io/
-npx prettier --check "**/*.js"
+npx prettier --check "**/*.js" 
