@@ -70,4 +70,13 @@ gpg --symmetric --cipher-algo AES256 <NOMBRE_DEL_FILE>
 https://github.com/alialaa/simple-docker-nodejs-api
 
 
-Para correr los scripts: chmod +x script.sh
+Para correr los scripts: chmod +X  script.sh
+# CI/CD
+## Build and testing
+https://create-react-app.dev/
+CI=true npm run test
+CI=true npm run test -- --coverage
+Para desplegar paginas web estaticas -> https://surge.sh/
+
+https://prettier.io/
+npx prettier --check "**/*.js"
